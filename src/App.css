@@ -1,0 +1,8 @@
+.card svg > path {
+  fill: #025595;
+  transition: .3s;
+}
+
+.card:hover svg > path {
+  fill: white;
+}
