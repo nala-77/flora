@@ -54,7 +54,7 @@ function TrendingSection() {
   ];
 
   return (
-    <section className="py-12 px-70">
+    <section id="service" className="py-12 px-70">
       <Title
         mainTitle="Most Trending"
         subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing eli"

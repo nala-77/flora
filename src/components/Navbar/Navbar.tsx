@@ -89,6 +89,7 @@ const Navbar = ({ image, links, btn }: navProps) => {
               <li
                 className="px-15 mb-8 py-6 border-y border-solid border-black hover:border-0 hover:bg-main-bg transition-all cursor-pointer"
                 key={index}
+                onClick={() => setActive(false)}
               >
                 <a className="text-2xl font-normal max-500:text-sm" href={`#${element.to}`}>
                   {element.link}

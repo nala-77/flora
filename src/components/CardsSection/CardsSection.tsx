@@ -59,7 +59,7 @@ const cardInfo = [
 
 function CardsSection() {
   return (
-    <section className="py-12 px-70">
+    <section id="about" className="py-12 px-70">
       <Title
         mainTitle="How it Works"
         subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing eli"

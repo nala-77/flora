@@ -24,7 +24,7 @@ interface forDataThreeImg {
 }
 function Footer({ logo, desc, dataOne, dataTwo, dataThree }: footerProps) {
   return (
-    <footer>
+    <footer id="contact">
       <div className="flex px-70 justify-between flex-wrap max-500:flex-col  max-500:gap-8 gap-2 pb-9 border-b-2 border-[#2222221A] border-solid">
         <div className="flex flex-col w-[350px]  max-500:w-full">
           <div>

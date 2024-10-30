@@ -7,7 +7,7 @@ import Tabs from "../Tabs/Tabs";
 const Estate = () => {
     const categories = ['Residential Property', 'Commercial Property', 'Agriculture Property', 'Industrial Property'];
   return (
-    <section className="py-12 px-70">
+    <section id="newProperty" className="py-12 px-70">
       <Title
         mainTitle="Best Real Estate Deals"
         subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing eli"
