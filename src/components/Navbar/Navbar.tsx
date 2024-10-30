@@ -38,7 +38,7 @@ const Navbar = ({ image, links, btn }: navProps) => {
       className={`flex justify-between items-center px-70 h-22 fixed w-full z-50
       ${scrolling || active ? " bg-white" : "bg-transparent"}
 
-      ${scrolling ? "shadow-lg" : ""}
+      ${scrolling ? "shadow-lg bg-white" : ""}
    `}
     >
       <div className="w-17">
@@ -79,7 +79,7 @@ const Navbar = ({ image, links, btn }: navProps) => {
       <div
         className={
           active
-            ? "flex flex-col absolute bg-white top-full right-0 w-full transition-all duration-200 z-50"
+            ? "flex flex-col absolute bg-white top-full h-screen right-0 w-full transition-all duration-200 z-50"
             : "w-full top-full transition-all duration-200 absolute -right-full z-50"
         }
       >
@@ -90,7 +90,7 @@ const Navbar = ({ image, links, btn }: navProps) => {
                 className="px-15 mb-8 py-6 border-y border-solid border-black hover:border-0 hover:bg-main-bg transition-all cursor-pointer"
                 key={index}
               >
-                <a className="text-2xl font-normal" href={`#${element.to}`}>
+                <a className="text-2xl font-normal max-500:text-sm" href={`#${element.to}`}>
                   {element.link}
                 </a>
               </li>
@@ -98,7 +98,7 @@ const Navbar = ({ image, links, btn }: navProps) => {
           })}
         </ul>
 
-        <button className="text-white bg-main-color w-34 text-sm rounded-md h-38 mx-auto">
+        <button className="text-white bg-main-color w-34 text-sm rounded-md h-38 mx-auto max-500:text-sm">
           {btn}
         </button>
       </div>
